@@ -10,7 +10,10 @@ interface IProductFromAPI {
   rating: { rate: number; count: number }; //Aqui a API é a que vem da API
 }
 
-export const fetchProduct = async (id: number): Promise<IProductRate | null> => { //Quando é para cada product, utilizase null
+export const fetchProduct = async (
+  id: number,
+): Promise<IProductRate | null> => {
+  //Quando é para cada product, utilizase null
   try {
     const response = await fetch(`https://fakestoreapi.com/products/${id}`); //Função para buscar um produto pelo ID e retornar com rate
     if (!response.ok) throw new Error("Produto não encontrado"); //se a resposta for not ok, enviar para o catch.
