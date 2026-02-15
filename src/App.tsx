@@ -1,10 +1,17 @@
 import "./App.css";
+import { ProductList } from "./components/ProductList";
 
 function App() {
   return (
-    <>
-      <h1>Hiii</h1>
-    </>
+    <div className="App">
+      <header>
+        <h1>Minha Loja</h1>
+      </header>
+
+      <main>
+        <ProductList />
+      </main>
+    </div>
   );
 }
 

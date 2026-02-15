@@ -11,6 +11,5 @@ export const fetchProducts = async (): Promise<IProductSummary[]> => {
     description: item.description,
     category: item.category,
     image: item.image,
-    // Se tentasses colocar 'rate' aqui, o TypeScript daria erro!
   }));
 };
