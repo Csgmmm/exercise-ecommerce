@@ -12,6 +12,3 @@ export interface IProduct {
 }
 
 export type IProductSummary = Omit<IProduct, "rating">;
-export interface IProductDetail extends IProductSummary {
-  rate: number;
-}
